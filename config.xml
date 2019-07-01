@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="xyz.reportapp.app" version="0.0.1">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="xyz.eolis.app" version="0.0.1">
 <name>Eolis</name>
-<description>xyz.reportapp.app</description>
-<author href="http://www.eolis.com.mx/" email="soporte@reportapp.xyz">ReportApp</author>
+<description>xyz.eolis.app</description>
+<author href="http://www.eolis.com.mx/" email="soporte@eolis.xyz">Eolis</author>
 
 <preference name="phonegap-version" value="cli-7.1.0" />
 <preference name="DisallowOverscroll" value="true"/>
@@ -64,7 +64,7 @@
 
 <gap:plugin name="cordova-plugin-x-toast" source="npm" />
 <gap:plugin name="cordova-plugin-customurlscheme" source="npm">
-<param name="URL_SCHEME" value="riopanuco" />
+<param name="URL_SCHEME" value="eolis" />
 </gap:plugin>
 
 <!-- plugin name="cordova-plugin-firebase-messaging" / -->
