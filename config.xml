@@ -67,10 +67,10 @@
 <param name="URL_SCHEME" value="eolis" />
 </gap:plugin>
 
-<!-- plugin name="cordova-plugin-firebase-messaging" / -->
+<!-- plugin name="cordova-plugin-firebase-messaging" 361329804221 / -->
 <!-- <plugin name="phonegap-plugin-push" spec="~2.0.0"(ok) spec="~2.2.3"(bad) source="npm"> spec="~1.4.5" -->
 <plugin name="phonegap-plugin-push" source="npm" spec="~2.0.0" >
-<param name="SENDER_ID" value="361329804221" />
+<param name="SENDER_ID" value="898709296651" />
 </plugin>
 <platform name="android">
 <resource-file src="google-services.json" target="google-services.json" />
