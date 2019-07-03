@@ -113,7 +113,7 @@
 <!-- <gap:plugin name="cordova-plugin-android-fingerprint-auth" source="npm" /> -->
 <!-- <gap:plugin name="cordova-plugin-fingerprint-aio" source="npm" /> -->
 
-<plugin name="cordova-plugin-fingerprint-aio">
+<plugin name="cordova-plugin-android-fingerprint-auth">
 <variable name="FACEID_USAGE_DESCRIPTION" value="Ingresar" />
 </plugin>
 
