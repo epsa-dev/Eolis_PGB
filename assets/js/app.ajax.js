@@ -304,7 +304,7 @@ data = null; container = null;
 
 }).fail(function(xhr, status, thrownError, error) {
 
-container.html('<div class="content text-center"><br><br><br><h4 class="ajax-loading-error"><i class="fa fa-warning txt-color-orangeDark"></i> Error '+xhr.status+' al cargar: <span class="txt-color-red"><a href="'+url+'">'+url+'</a></span><br><span style="text-transform: capitalize;">' + thrownError + '</span></h4><br><br><br></div>');
+container.html('<div class="content text-center"><br><br><br><h4 class="ajax-loading-error"><i class="fa fa-warning txt-color-orangeDark"></i> Error '+xhr.status+' al cargar: <span class="txt-color-red">'+url+'</span><br><span style="text-transform: capitalize;">' + thrownError + '</span></h4><br><br><br></div>');
 
 });
 
