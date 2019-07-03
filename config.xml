@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="xyz.eolis.app" version="0.0.2">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="xyz.eolis.app" version="0.0.3">
 <name>Eolis</name>
 <description>xyz.eolis.app</description>
 <author href="http://www.eolis.com.mx/" email="soporte@eolis.xyz">Eolis</author>
 
+<preference name="android-minSdkVersion" value="25"/>
 <preference name="phonegap-version" value="cli-7.1.0" />
+<preference name="android-build-tool" value="gradle" />
+
 <preference name="DisallowOverscroll" value="true"/>
-<preference name="android-minSdkVersion" value="15"/>
 <preference name="permissions"                value="none"/>
 <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
 <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
@@ -23,7 +25,6 @@
 <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
 <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
 <preference name="CameraUsesGeolocation" value="true" />
-<preference name="android-build-tool" value="gradle" />
 <preference name="SplashScreenDelay" value="3000" />
 <preference name="AllowInlineMediaPlayback" value="true"/>
 <preference name="MediaPlaybackRequiresUserAction" value="false"/>
@@ -79,11 +80,10 @@
 <resource-file src="GoogleService-Info.plist" target="GoogleService-Info.plist" />
 </platform>
 
-<!---<plugin name="com.phonegap.plugins.barcodescanner" />-->
-<!-- <gap:plugin name="phonegap-plugin-barcodescanner" source="npm" /> -->
-<!-- <plugin name="phonegap-plugin-barcodescanner" spec="^6.0.8">
-<variable name="CAMERA_USAGE_DESCRIPTION" value="Activa el escaner" />
-</plugin> -->
+<plugin name="phonegap-plugin-barcodescanner" spec="^7.0.0">
+<variable name="CAMERA_USAGE_DESCRIPTION" value="Activa la camara para poder usar el scanner :)" />
+<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Vamos a guardar en libreria" />
+</plugin>
 
 <gap:config-file platform="ios" parent="CFBundleShortVersionString">
 <string>100</string>
@@ -111,6 +111,7 @@
 <gap:plugin name="cordova-plugin-background-app" source="npm" />
 <gap:plugin name="cordova-plugin-datepicker" source="npm" />
 <gap:plugin name="cordova-plugin-android-fingerprint-auth" source="npm" />
+<gap:plugin name="cordova-plugin-fingerprint-aio" source="npm" />
 
 <!--
 <gap:plugin name="de.appplant.cordova.plugin.background-mode" /> -->
