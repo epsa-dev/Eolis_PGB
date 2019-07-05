@@ -4,12 +4,13 @@ console._error_old = console.error; console.error = function(msg){ alert("error:
 console._warn_old = console.warn; console.warn = function(msg){ alert("warn: "+msg); console._warn_old(msg); }; */
 
 var config_adminpanel_fb = {
-    apiKey: "AIzaSyDpoUEFbjaDu0lwF03eMs9GCDlGJegM794",
+apiKey: "AIzaSyDpoUEFbjaDu0lwF03eMs9GCDlGJegM794",
     authDomain: "report-app.firebaseapp.com",
     databaseURL: "https://report-app.firebaseio.com",
     projectId: "report--app",
     storageBucket: "report--app.appspot.com",
-    messagingSenderId: "898709296651"
+    messagingSenderId: "898709296651",
+    appId: "1:898709296651:web:b74a1ade6df2ec04"
 };
 //firebase.initializeApp(config_adminpanel_fb);
 
