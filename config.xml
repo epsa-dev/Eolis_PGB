@@ -110,7 +110,7 @@
 <plugin spec="https://github.com/Litekey/heartbeat-cordova-plugin.git" source="git" /> -->
 
 <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
-<gap:plugin name="cordova-plugin-background-app" source="npm" />
+<!-- <gap:plugin name="cordova-plugin-background-app" source="npm" /> -->
 <gap:plugin name="cordova-plugin-datepicker" source="npm" />
 <!-- <gap:plugin name="cordova-plugin-android-fingerprint-auth" source="npm" /> -->
 <!-- <gap:plugin name="cordova-plugin-fingerprint-aio" source="npm" /> -->
