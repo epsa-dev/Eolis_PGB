@@ -77,10 +77,10 @@
 <param name="SENDER_ID" value="898709296651" />
 </plugin>
 <platform name="android">
-<resource-file src="/google-services.json" target="google-services.json" />
+<resource-file src="google-services.json" target="google-services.json" />
 </platform>
 <platform name="ios">
-<resource-file src="/GoogleService-Info.plist" target="GoogleService-Info.plist" />
+<resource-file src="GoogleService-Info.plist" target="GoogleService-Info.plist" />
 </platform>
 
 <plugin name="phonegap-plugin-barcodescanner" spec="^7.0.0">
